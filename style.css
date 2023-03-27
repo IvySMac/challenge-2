@@ -77,12 +77,6 @@ h2{
     padding: 10px;
 }
 
-table, th, td, tr {
-    height: 100%;
-    width: 100%;
-    border: 1px solid;
-  }
-
 section {
     display: flex;
     height: 250px;
