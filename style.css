@@ -2,9 +2,16 @@
     flex-wrap: wrap;
 }
 
-body{
+:root {
+    --pink: rgb(180, 28, 127);
+}
+
+body, html {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 50%;
     margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -28,26 +35,57 @@ body{
 }
   
 .header a.logo {
-    color: black;
-    background-color: rgba(0,212,192,1);
+    color: white;
+    background-color: var(--pink);
     text-decoration: none;
     font-size: 35px;
     font-weight: bold;
+}
+
+.header-right {
+    float: right;
 }
 
 nav a:hover {
     background-color: white;
     color: black;
   }
-  
-.header-right {
-    float: right;
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/heroimage.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.hero-text {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+ 
+h2{
+    background-color: var(--pink);
+    color: white;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
 }
+
+table, th, td, tr {
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+  }
 
 section {
     display: flex;
     height: 250px;
-    border: 1px solid black;
 }
 
 footer {
