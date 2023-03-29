@@ -70,12 +70,15 @@ nav a:hover {
   }
 
 h1 {
-    font-size: 45px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     padding: 50px;
     margin: 50px;
+    
 }
  
-h2{
+h2 {
     background-color: var(--pink);
     color: white;
     border-radius: 4px;
@@ -83,53 +86,66 @@ h2{
     padding: 10px;
 }
 
-section {
-    display: flex;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
-    align-content: flex-start;
-    border: 1px solid black;
+h3 {
+    text-align: center;
 }
 
+table {
+    width: 100%;
+  }
+
+
+th {
+    color: var(--pink);
+    text-align: left;
+    font-size: 32px;
+    padding: 0;
+    height: 100px;
+    width: 50px;
+}
 
 .about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: var(--pink);
-    padding: 0;
-}
-
-.about-me-info {
+    box-sizing: content-box;
+    width: 25%;
+    text-indent: 100px;
     color: black;
-     padding: 0;
 }
-
 
 .work {
-    display: flex;
-    justify-content: start;
-    color: var(--pink);
-    padding: 0px;
+    box-sizing: content-box;
+    width: 25%;
+    text-indent: 100px;
+    color: black;
 }
 
-.work-samples {
-    color: black;
+td {
+    text-align: left;
     padding: 0;
+    height: 350px;
+    width: 350px;
+    border: 4px solid black;
 }
+
+
+p {
+    display: inline;
+    color: black;
+    padding: 15px;
+}
+
 
 footer {
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    color: var(--pink);
-    border: 1px solid black;
+    box-sizing: content-box;
+    width: 25%;
+    text-indent: 100px;
+
 }
 
-.contact-info {
-    display: flex;
-    justify-content:space-between;
+.contact-me {
+    box-sizing: content-box;
+    width: 25%;
+    text-indent: 100px;
+    color: black;
 }
 
 @media screen and (max-width: 500px) {
