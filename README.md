@@ -42,11 +42,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ## Credits
 
 ### Code
-W3schools.com - responsive header & hero image
+<a href="https://www.w3schools.com/howto/default.asp">W3schools.com</a> - responsive header, image hover overlay, & hero image
 <p>
-cssgradient.io - gradient for header
+<a href="https://www.cssgradient.io/">cssgradient.io</a> - gradient for header
 <p>
-dscode @Youtube - image grid
+<a href="https://www.youtube.com/watch?v=rnhoY5Cdmy0&t=648s&ab_channel=dcode">dcode</a> @Youtube - image grid
 
 ### Images
 
