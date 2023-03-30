@@ -1,24 +1,28 @@
 
-:root {
+:root { 
+    /*add custom variables here*/
     --pink: rgb(180, 28, 127);
 }
 
 body, html {
     font-family: Arial, Helvetica, sans-serif;
+    /*changes the background color behind everything in the main tag*/
     background-color: rgb(250, 228, 232);
     width: 100%;
     height: 100%;
+    /*margin and padding here control the space around the inside of the webpage */
     margin: 0;
     padding: 0;
 }
 
-.header {
-    overflow: hidden;
-    background: rgb(50,2,33);
+.header { 
+    overflow: hidden; 
+    /* change the gradient colors of the top header here*/
     background: linear-gradient(90deg, rgba(50,2,33,1) 0%, rgba(121,9,118,1) 40%, rgba(0,212,192,1) 100%);
     padding: 5px;
 }
 
+ /*moves the nav bar in the header*/
 .header-right {
     float: right;
     padding: 20px;
@@ -26,20 +30,20 @@ body, html {
 }
   
 .header a {
-    float: left;
+    /*changes the styling of the links in the top nav bar*/
     color: white;
-    text-align: center;
     font-weight: bold;
     padding: 12px;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     font-size: 15px; 
     line-height: 25px;
-    border-radius: 4px;
 }
   
 h1 {
+    /*changes position of 'Ivy McCurdy' in the header*/
     display: inline-flex;
+    /*everything under this comment changes the styling of 'Ivy McCurdy' in the header*/
     color: white;
     background-color: var(--pink);
     border-radius: 4px;
@@ -51,14 +55,19 @@ h1 {
     
 }
 
-
+/*controls the highlight and text color when the cursor hovers over the nav links*/
 nav a:hover {
+    /*highlight color*/
     background-color: white;
+    /*text color*/
     color: black;
   }
 
+/*image that belongs right under the header*/
 .hero-image {
+    /*change the color of the gradient that overlays the image*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner_munster.jpg");
+    /*position and size of image under here*/
     height: 40%;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,6 +75,7 @@ nav a:hover {
     position: relative;
   }
 
+/*positions text on hero image*/
 .hero-text {
     display: flex;
     align-items: end;
@@ -75,7 +85,7 @@ nav a:hover {
     color: white;
   }
 
- 
+ /*styles the text on the hero image*/
 h2 {
     background-color: rgba(180, 28, 127, 0.644);
     color: white;
@@ -84,46 +94,45 @@ h2 {
     padding: 10px;
 }
 
+/*sets color, size, and position of all h3 tags*/
 h3 {
     color: var(--pink);
     text-align: center;
+    font-size: 2rem;
 }
 
-
+/*adjust size of table*/
 table {
     width: 100%;
     padding: 35px;
   }
 
-
-th {
-    color: var(--pink);
-    text-align: left;
-    font-size: 32px;
-    height: 100px;
-    width: 50px;
-}
-
+/*targets the image in about me section*/
 #self-portrait {
     float: left;
     margin: 5px;
     border-radius: 4px;
 }
 
+/*adjust the size of the box surrounding the 'About Me' text*/
 .about-me {
     box-sizing: content-box;
     width: 25%;
-    text-indent: 100px;
-    color: black;
 }
 
+/*adjust the size of the box surrounding the 'Work' text*/
 .work {
     box-sizing: content-box;
     width: 25%;
-    text-indent: 100px;
-    color: black;
 }
 
+/*adjust the size of the box surrounding the 'Contact Me' text*/
+.contact-me {
+    box-sizing: content-box;
+    width: 25%;
+}
+
+/*targets the main text inside the table*/
 td {
     text-align: left;
     text-indent: 15px;
@@ -133,12 +142,7 @@ td {
     border-left: 4px dashed var(--pink);
 }
 
-.contact-me {
-    box-sizing: content-box;
-    width: 25%;
-    color: black;
-}
-
+/*change the border around the footer tag*/
 footer {
     display: flex;
     justify-content: center;
@@ -147,19 +151,21 @@ footer {
     width: 100%;
     color: var(--pink);
     padding: 30px;
-    margin: 30px;
     border-top: 4px dashed var(--pink);
 }
 
+/*places a copyright symbol right before all the text in the footer tag*/
 footer::before{
     display: inline-flex;
     content: "© ";
 }
 
-@media screen and (max-width: 500px) {
+/*makes the links of the nav bar stack when browser is adjusted to a smaller screen*/
+@media screen and (max-width: 600px) {
     .header a {
       float: none;
       display: block;
       text-align: left;
     }
+
 }
