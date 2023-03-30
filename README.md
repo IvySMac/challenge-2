@@ -1,10 +1,16 @@
 # Challenge 2
 
 ## Description
-coming soon
+Now that I have some tools under my Full-Stack Developer belt, I can now use that to create my very first portfolio! This portfolio will section out into three main bodies of content-'About Me', 'Work', and 'Contact Me'. 
 
 ## Usage
-coming soon
+
+![a portfolio website with a header that reads 'Ivy McCurdy' to the left and navigation links on the right. Under it has the word 'About Me' to the left with a block of text and a photograph of a person making a peace sign with their fingers](./images/screenshot.jpg)
+
+The primary objective of this challenge will be to create interactive images and links that will better help guide future employers toward my work and my socials. 
+
+<a href="https://ivysmac.github.io/challenge-2/">Live Site</a>
+
 
 ## User Story
 
@@ -34,4 +40,19 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Credits
-coming soon
+
+### Code
+W3schools.com - responsive header & hero image
+<p>
+cssgradient.io - gradient for header
+<p>
+dscode @Youtube - image grid
+
+### Images
+
+img-1 & img-3 - <a href="https://www.vecteezy.com/members/yganko">yganko on vecteezy</a> 
+
+img-2, img-4, img-5 - <a href="https://www.vecteezy.com/members/emojoez">emojoez on vecteezy</a>
+
+hero image was drawn by me 
+
