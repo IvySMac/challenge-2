@@ -108,6 +108,12 @@ th {
     width: 50px;
 }
 
+#self-portrait {
+    float: left;
+    margin: 5px;
+    border-radius: 4px;
+}
+
 .about-me {
     box-sizing: content-box;
     width: 25%;
@@ -124,7 +130,7 @@ th {
 
 td {
     text-align: left;
-    text-indent: 5px;
+    text-indent: 15px;
     padding: 20px;
     height: 200px;
     width: 350px;
