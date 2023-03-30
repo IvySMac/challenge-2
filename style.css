@@ -75,10 +75,6 @@ nav a:hover {
     color: white;
   }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
  
 h2 {
     background-color: rgba(180, 28, 127, 0.644);
@@ -137,18 +133,27 @@ td {
     border-left: 4px dashed var(--pink);
 }
 
-
-footer::after{
-    display: flex;
-    align-items: center;
-    content: "❤️" ;
-}
-
 .contact-me {
     box-sizing: content-box;
     width: 25%;
-    text-indent: 100px;
     color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    box-sizing: content-box;
+    font-weight: bold;
+    width: 100%;
+    color: var(--pink);
+    padding: 30px;
+    margin: 30px;
+    border-top: 4px dashed var(--pink);
+}
+
+footer::before{
+    display: inline-flex;
+    content: "© ";
 }
 
 @media screen and (max-width: 500px) {
