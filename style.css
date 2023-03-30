@@ -63,6 +63,7 @@ nav a:hover {
     color: black;
   }
 
+
 /*image that belongs right under the header*/
 .hero-image {
     /*change the color of the gradient that overlays the image*/
@@ -128,6 +129,7 @@ table {
 }
 
 #img-grid {
+    /*custom variables for the size and number of columns */
     --gap: 16px;
     --num-cols: 4;
     --row-height: 300px;
@@ -142,27 +144,19 @@ table {
     gap: var(--gap);
  }
 
-#img-grid > img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-}
-
+/*change the sizing of the images within the grid*/
 img {
     width: 310px;
     height: 300px;
 }
+
+/*size of the entire container of the overlay*/
 .container {
     position: relative;
     width: 100%;
   }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
+
+/*position, animation and color of the overlay with text*/
   .overlay {
     position: absolute;
     top: 0;
@@ -175,7 +169,8 @@ img {
     transition: .5s ease;
     background-color: var(--pink);
   }
-  
+
+/*adjust the opacity of the overlay here. this also shows the overlay when cursor goes over the images*/  
   .container:hover .overlay {
     opacity: 1;
   }
@@ -197,6 +192,19 @@ img {
 .contact-me {
     box-sizing: content-box;
     width: 25%;
+}
+
+/*controls the position and color of the links for the Contact Me page*/
+.socials a {
+    display: inline-flex;
+    justify-content: space-evenly;
+    color: var(--pink);
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    font-size: 15px; 
+    line-height: 25px;
 }
 
 /*targets the main text inside the table*/
@@ -233,5 +241,10 @@ footer::before{
       display: block;
       text-align: left;
     }
+
+    .container {
+     display: block;
+      }
+    
 
 }
