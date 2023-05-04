@@ -146,6 +146,8 @@ table {
 
 /*change the sizing of the images within the grid*/
 img {
+  object-fit:contain;
+  background-color: #132A13;
     width: 310px;
     height: 300px;
 }
